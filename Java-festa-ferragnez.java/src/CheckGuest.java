@@ -17,13 +17,13 @@ public class CheckGuest{
             break;
             
         } 
-     
-    }
-    if (!festa) {
+        else if ( ! festa) {
         
-        System.out.println("Non sei invitato alla festa");
-       }
-
+            System.out.println("Non sei invitato alla festa");
+            break;
+           }
+    }
+  
      
       
       
