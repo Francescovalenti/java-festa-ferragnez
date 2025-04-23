@@ -10,25 +10,48 @@ public class CheckGuest{
         String nomeUtente = input.nextLine();
        
         Boolean festa = false;
-        for (int i = 0; i < invitati.length ; i++){
-        if (invitati[i].toUpperCase().equals(nomeUtente.toUpperCase())) {
-            festa = true;
-            System.out.println( "Sei invitato alla festa");
-            break;
+        int i=0;
+
+        // metodo 1 con ciclo for
+    //     for (int i = 0; i < invitati.length ; i++){
+    //     if (invitati[i].toUpperCase().equals(nomeUtente.toUpperCase())) {
+    //         festa = true;
+    //         System.out.println( "Sei invitato alla festa");
+    //         break;
             
-        } 
-        else if ( ! festa) {
+    //     } 
+    //     else if ( ! festa) {
         
-            System.out.println("Non sei invitato alla festa");
-            break;
-           }
-    }
+    //         System.out.println("Non sei invitato alla festa");
+    //         break;
+    //        }
+    // }
   
      
       
       
-        input.close();
+    //     input.close();
       
     
+    // }
+    
+    while (i < invitati.length) {
+		;
+			if (invitati[i].toUpperCase().equals(nomeUtente.toUpperCase())) {
+				festa=true;
+				break;
+			}
+			i++;
+		}
+		
+		
+		if (festa) {
+            festa = false;
+			System.out.println("Sei invitato alla festa");
+		}else {
+			System.out.println("Non sei invitato alla festa");
+		}
+		
+input.close();
     }
 }
