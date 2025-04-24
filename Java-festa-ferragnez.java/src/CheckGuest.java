@@ -9,7 +9,7 @@ public class CheckGuest{
         System.out.println("Dimmi il tuo nome e cognome per sapere se sei nella lista degli invitati:");
         String nomeUtente = input.nextLine();
        
-        Boolean festa = false;
+        Boolean festa =  false;
         int i=0;
 
         // metodo 1 con ciclo for
@@ -20,11 +20,7 @@ public class CheckGuest{
     //         break;
             
     //     } 
-    //     else if ( ! festa) {
-        
-    //         System.out.println("Non sei invitato alla festa");
-    //         break;
-    //        }
+    //   
     // }
   
      
@@ -39,7 +35,7 @@ public class CheckGuest{
 		;
 			if (invitati[i].toUpperCase().equals(nomeUtente.toUpperCase())) {
 				festa=true;
-				break;
+				
 			}
 			i++;
 		}
