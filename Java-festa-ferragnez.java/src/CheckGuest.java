@@ -33,7 +33,7 @@ public class CheckGuest{
     
     while (i < invitati.length) {
 		;
-			if (invitati[i].toUpperCase().equals(nomeUtente.toUpperCase())) {
+			if (invitati[i].equalsIgnoreCase(nomeUtente)) {
 				festa=true;
 				
 			}
