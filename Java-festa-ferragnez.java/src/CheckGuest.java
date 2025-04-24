@@ -10,7 +10,7 @@ public class CheckGuest{
         String nomeUtente = input.nextLine();
        
         Boolean festa =  false;
-        int i=0;
+        int index = 0;
 
         // metodo 1 con ciclo for
     //     for (int i = 0; i < invitati.length ; i++){
@@ -20,7 +20,9 @@ public class CheckGuest{
     //         break;
             
     //     } 
-    //   
+    // else {
+    //     System.out.println("Non sei invitato alla festa");
+    // //   
     // }
   
      
@@ -31,13 +33,13 @@ public class CheckGuest{
     
     // }
     
-    while (i < invitati.length) {
+    while ( !festa && index < invitati.length) {
 		;
-			if (invitati[i].equalsIgnoreCase(nomeUtente)) {
+			if (invitati[index].equalsIgnoreCase(nomeUtente)) {
 				festa=true;
 				
 			}
-			i++;
+			index++;
 		}
 		
 		
